@@ -1,0 +1,85 @@
+pwd
+mkdir
+ls
+cd 
+cd ..
+----------------------
+#chatGpt - AI Tool 
+
+touch - create empty file
+ex- touch f1.txt f2.txt f3.txt
+
+mkdir abc school mydata d1 d2 d3
+
+ls -l  : long list
+drwxr-xr-x    1 Sagar-84 UsersGrp         0 Sep 29 09:27 abc
+drwxr-xr-x    1 Sagar-84 UsersGrp         0 Sep 29 09:27 d1
+
+-l : long list 
+-r : reverse order 
+-t : time based order 
+-R :recussive
+-a : archive 
+
+dir/file starting with . ==> hidden file / dir 
+
+ls -lrtRa
+===============================
+
+rmdir : remove dir : delete empty dir 
+
+rmdir dir_name 
+
+rm -r dir_name   //remove non empty dir 
+
+rm file_name   // remove file 
+
+rm file1 file2 file2 
+
+======================================
+#Vim Editor 
+
+vi <filename> : open if already exit 
+vi <filename> : create and open if not already exit 
+default file will open in read only mode
+read only --> insert  => insert / i 
+insert --> readonly   => esc
+save and exit =>  :wq! enter
+
+exit =>  :q! enter
+
+
+
+#vim shortcut : (Read only)
+Shift + G ==> redirect last line 
+:n enter  ==> rdirect nth line   ex. :1 enter 
+:set number enter => assign number for each
+
+
+
+
+
+
+
+cat : read file 
+cat filename 
+
+================================================
+pwd
+mkdir
+ls
+cd
+cd ..
+cd enter
+touch
+ls -lrtRa 
+rm -r 
+rmdir 
+rm filename
+vi 
+cat 
+========================
+i have lernt below linux commands i wanted to practice more on it so act as interviewer and ask theory or practical questions on it dont answer untill i ask
+ask each question at a time wait from my answer then can ask next with verify
+pwd mkdir ls cd cd .. cd enter touch ls -lrtRa rm -r rmdir rm filename vi cat 
+================================================
