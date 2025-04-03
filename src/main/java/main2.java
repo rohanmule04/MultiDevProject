@@ -5,6 +5,10 @@ public class main2 {
 		// TODO Auto-generated method stub
  System.out.println("This is second file ");
  System.out.println("This is  second file of second line");
+ 
+ System.out.println("This is second file ");
+ System.out.println("This is  second file of second line");
+ 
 	}
 
 }
