@@ -1,0 +1,135 @@
+#B16 DE - OFFLINE - 28-09-2024
+------------------------------------
+-Quick Introduction
+-Registration Form , Email , WhatsApp
+-Drive access and Links
+-Notes and Revision
+-Mandatory Activities
+-SW installation [Anydesk,Notepad++,whatsapp]
+-Course Structure
+-Start with basic
+
+
+6 Months
+-linux
+-DBMS + SQL (1Month)*****
+-AWS Cloud (Part-1)
+-Bigdata (HDFS,MR,YARN)
+-Hive
+-Python (10-15%)
+-pySpark
+-Pandas,NumPy,FileHandling
+-Git 
+-SCD CDC
+-AWS (part-2)
+-Airflow
+-Azure (Databricks,ADLS,Synaps)
+Project 1
+Project 2
+Interview Guide
+
+===============================================
+System - Configuration
+
+Laptop - 
+
+min i3   8th gen
+RAM 4GB
+HDD 512 GB
+windows 8+
+
+
+Computer / PC / Laptop / Notebook
+Server / Machine
+Instance
+Node
+Broker
+
+Computer = Hardware + Software
+
+Hardware : RAM , ROM , Processor , Screen,Keyboard etc
+Software 
+
+
+#OS : Operating System 
+
+1.GUI (Graphical user Interface)
+Windows
+
+
+2.command based Operating System - 
+Linux/Unix
+
+Unix - 1970 
+cmd based 
+Free 
+
+1990-1991  Linux 
+Open Source
+cmd based 
+Secure
+custimizaion possible
+flavour - Ubuntu,redhat,sesa,mint,amazon linux 
+multiuser
+
+=============================================================
+#SW Installation - 
+1.Anydesk - use to access remote computer
+double click on setup
+
+2.notepad++
+double click on setup --> english --> next ---> ... --> install
+
+3.whatsappWeb 
+
+www.notepad.link/JcruL
+
+4.Mobaxtream
+download --. extract --> click on app file --> start local terminal
+
+
+========================================================
+Shell / Terminal - run linux cmd 
+linux is case sensative 
+
+pwd: present working dir / current location
+
+ls : list all files , dir from current path 
+
+mkdir <dir_name>
+mkdir <dirname> <dir_name>
+
+exm-
+mkdir B16
+mkdir d1 d2 d3 d4 d5
+mkdir "My Data"
+mkdir -p A/B/C/D/E/F/G
+
+
+folder => directory
+
+cd : change dir --> dir 
+cd .. : parant dir 
+
+mkdir school
+
+cd enter
+
+
+File System in Linux - 
+
+===================================================
+pwd
+ls 
+mkdir 
+cd foldername
+cd ..
+
+cd enter 
+
+
+
+
+
+
+

@@ -1,0 +1,376 @@
+Create new branch 
+
+git branch <branch-name>
+
+redirect to another branch 
+
+
+git checkout <branch-name>
+
+
+add code 
+
+git add .
+
+
+
+
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject
+$ pwd
+/e/JavaProject
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject
+$ git clone https://github.com/rohanmule04/MultiDevProject.git
+Cloning into 'MultiDevProject'...
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 22 (delta 0), reused 22 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (22/22), done.
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject
+$ git init
+Initialized empty Git repository in E:/JavaProject/.git/
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject (master)
+$ git config --global user.name "rohanmule0405"
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject (master)
+$ git config --global  user.email "rohanmule0405@gmail.com"
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject (master)
+$ ls -lrt
+total 0
+drwxr-xr-x 1 ASUS 197610 0 Apr  3 13:36 MultiDevProject/
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject (master)
+$ cd MultiDevProject/
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject (main)
+$ git pull origin main
+From https://github.com/rohanmule04/MultiDevProject
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject (main)
+$ git checkout -b login_b
+Switched to a new branch 'login_b'
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject (login_b)
+$ git status
+On branch login_b
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        build/classes/main2.class
+        src/main/java/main2.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject (login_b)
+$ ls -lrt
+total 0
+drwxr-xr-x 1 ASUS 197610 0 Apr  3 13:36 src/
+drwxr-xr-x 1 ASUS 197610 0 Apr  3 13:36 build/
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject (login_b)
+$ cd src
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src (login_b)
+$ ls -lrt
+total 0
+drwxr-xr-x 1 ASUS 197610 0 Apr  3 13:36 main/
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src (login_b)
+$ cd main
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main (login_b)
+$ ls -lrt
+total 0
+drwxr-xr-x 1 ASUS 197610 0 Apr  3 13:36 webapp/
+drwxr-xr-x 1 ASUS 197610 0 Apr  3 13:53 java/
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main (login_b)
+$ cd java
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ ls -lrt
+total 2
+-rw-r--r-- 1 ASUS 197610 180 Apr  3 13:36 Main1.java
+-rw-r--r-- 1 ASUS 197610 162 Apr  3 13:53 main2.java
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git status
+On branch login_b
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../build/classes/main2.class
+        main2.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git status
+On branch login_b
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../build/classes/main2.class
+        main2.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git add .
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git status
+On branch login_b
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   main2.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../build/classes/main2.class
+
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git commit -m "Added this main 2 file "
+[login_b dc7f264] Added this main 2 file
+ 1 file changed, 10 insertions(+)
+ create mode 100644 src/main/java/main2.java
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git log --oneline
+dc7f264 (HEAD -> login_b) Added this main 2 file
+2d5cd5e (origin/main, origin/HEAD, main) Initial commit - Java project setup
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git  push origin login_b
+info: please complete authentication in your browser...
+remote: Permission to rohanmule04/MultiDevProject.git denied to rohanmule0405.
+fatal: unable to access 'https://github.com/rohanmule04/MultiDevProject.git/': The requested URL returned error: 403
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git  push origin login_b
+info: please complete authentication in your browser...
+remote: Permission to rohanmule04/MultiDevProject.git denied to rohanmule0405.
+fatal: unable to access 'https://github.com/rohanmule04/MultiDevProject.git/': The requested URL returned error: 403
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ ^[[200~gh auth status
+bash: $'\E[200~gh': command not found
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ gh auth status
+bash: gh: command not found
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ gh auth login
+bash: gh: command not found
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git credential reject https://github.com
+git credential approve
+usage: git credential (fill|approve|reject)
+approve
+warning: invalid credential line: approve
+fatal: unable to read credential from stdin
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git credential reject https://github.com
+usage: git credential (fill|approve|reject)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git pull origin main
+From https://github.com/rohanmule04/MultiDevProject
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git push origin login_b
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 592 bytes | 296.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'login_b' on GitHub by visiting:
+remote:      https://github.com/rohanmule04/MultiDevProject/pull/new/login_b
+remote:
+To https://github.com/rohanmule04/MultiDevProject.git
+ * [new branch]      login_b -> login_b
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git pull origin main
+From https://github.com/rohanmule04/MultiDevProject
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 899 bytes | 299.00 KiB/s, done.
+From https://github.com/rohanmule04/MultiDevProject
+ * branch            main       -> FETCH_HEAD
+   2d5cd5e..cc9adf4  main       -> origin/main
+Updating dc7f264..cc9adf4
+Fast-forward
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ checkout -main
+bash: checkout: command not found
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (login_b)
+$ git checkout -b mainn
+Switched to a new branch 'mainn'
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git checkout -b main
+fatal: a branch named 'main' already exists
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ ^[[200~git checkout main
+bash: $'\E[200~git': command not found
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (main)
+$ git pull origin main
+From https://github.com/rohanmule04/MultiDevProject
+ * branch            main       -> FETCH_HEAD
+Updating 2d5cd5e..cc9adf4
+Fast-forward
+ src/main/java/main2.java | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 src/main/java/main2.java
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (main)
+$ git pull origin main
+From https://github.com/rohanmule04/MultiDevProject
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (main)
+$ ls -lrt
+total 2
+-rw-r--r-- 1 ASUS 197610 180 Apr  3 13:36 Main1.java
+-rw-r--r-- 1 ASUS 197610 223 Apr  3 14:27 main2.java
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (main)
+$ git checkout main2
+error: pathspec 'main2' did not match any file(s) known to git
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (main)
+$ git checkout main2
+error: pathspec 'main2' did not match any file(s) known to git
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (main)
+$ git checkout mainn
+Switched to branch 'mainn'
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git push .
+Everything up-to-date
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ ^C
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git commit -m "Added this maiasdsd file "
+On branch mainn
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../build/classes/main3.class
+        main3.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git add .
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git commit -m "Added this maiasdsd file "
+[mainn 0195350] Added this maiasdsd file
+ 1 file changed, 9 insertions(+)
+ create mode 100644 src/main/java/main3.java
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ ^C
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git commit -m "Added this maiasdsd file "
+On branch mainn
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../build/classes/main3.class
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git add .
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git commit -m "Added this maiasdsd file "
+On branch mainn
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../build/classes/main3.class
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ ls lrt
+ls: cannot access 'lrt': No such file or directory
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ ls -lrt
+total 3
+-rw-r--r-- 1 ASUS 197610 180 Apr  3 13:36 Main1.java
+-rw-r--r-- 1 ASUS 197610 223 Apr  3 14:27 main2.java
+-rw-r--r-- 1 ASUS 197610 160 Apr  3 14:30 main3.java
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git add main3.java
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$ git commit -m "sfdsfdsfsd"
+On branch mainn
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../build/classes/main2.class
+        ../../../build/classes/main3.class
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS@DESKTOP-6VQVA6A MINGW64 /e/JavaProject/MultiDevProject/src/main/java (mainn)
+$
